@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButtontoHomepage_Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/parentLoginTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/parentLoginTitle"/>
+
+
+    <TextView
+        android:id="@+id/parentLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_parentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parentLoginTitle"
+        android:text="Parent Name: "
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/ParentNameInput2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Parent Name:"
+        android:background="@color/white"
+        android:layout_below="@id/tv_parentName"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_studentName_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ParentNameInput2"
+        android:text="Student ID:"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"/>
+
+
+    <EditText
+        android:id="@+id/studentIDInput_Parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Student ID"
+        android:layout_below="@id/tv_studentName_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/loginButtonParent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/studentIDInput_Parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/signupButtonParent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Signup"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/loginButtonParent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/buttonStudentPortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Student Portal"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="#8B4513"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/buttonParentPortal"/>
+
+    <Button
+        android:id="@+id/buttonParentPortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Parent Portal"
+        android:layout_centerInParent="true"
+        android:background="#8B4513"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEARN N' PLAY APPLICATION"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="200dp"/>
+</RelativeLayout>

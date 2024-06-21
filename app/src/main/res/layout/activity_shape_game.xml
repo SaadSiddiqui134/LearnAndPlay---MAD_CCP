@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shapes Game"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/shape_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/square_ccp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_shapeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Enter Shape Name:"
+        android:layout_below="@id/shape_image"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"/>
+
+
+    <EditText
+        android:id="@+id/shape_name_input"
+
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Enter shape name"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_below="@id/tv_shapeName"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/shape_name_input"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/submit_button"
+        android:layout_toRightOf="@id/submit_button"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

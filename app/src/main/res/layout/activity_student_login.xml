@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButtonStdPortal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/studentLoginTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/studentLoginTitle"/>
+
+
+    <TextView
+        android:id="@+id/studentLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentLoginTitle"
+        android:text="Student Name:"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"/>
+
+
+    <EditText
+        android:id="@+id/studentNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="name of student here "
+        android:layout_below="@id/tv_studentName"
+        android:background="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/stdLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/studentNameInput"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/stdsignupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Signup"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/stdLoginButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

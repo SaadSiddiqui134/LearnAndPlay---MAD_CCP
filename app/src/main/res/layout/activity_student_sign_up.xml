@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButtonStdSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/signupHeaderText"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/signupHeaderText"/>
+
+    <TextView
+        android:id="@+id/signupHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Student Signup"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/signupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupHeaderText"
+        android:text="Studet Name:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/studentNameSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/signupNameText"
+        android:layout_alignStart="@id/signupNameText"
+        android:hint="enter student name here "
+        android:background="@color/white"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/signupAgeStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentNameSignUp"
+        android:text="Student Age:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/studentAgeSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@id/signupAgeStudent"
+        android:layout_below="@id/signupAgeStudent"
+        android:hint="enter student age here "
+        android:background="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/stdsignupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentAgeSignUp"
+        android:layout_centerHorizontal="true"
+        android:text="Signup"
+        android:layout_marginTop="50dp"
+        android:background="#A0522D"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

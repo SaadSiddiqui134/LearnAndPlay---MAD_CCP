@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/childProgressTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/childProgressTitle"/>
+
+    <TextView
+        android:id="@+id/childProgressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child Progress"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/rewardLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Child Earned Rewards:"
+
+        android:layout_below="@id/childProgressTitle"
+        android:layout_marginTop="80dp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/starIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/rewardInputField"
+        android:src="@drawable/star_ccp"
+        android:layout_toEndOf="@id/rewardInputField"
+        android:layout_alignTop="@id/rewardInputField"/>
+
+    <EditText
+        android:id="@+id/rewardInputField"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rewardLabel"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint=""/>
+
+    <TextView
+        android:id="@+id/activityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity:"
+        android:layout_below="@id/rewardInputField"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/activityInputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/activityLabel"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"/>
+</RelativeLayout>

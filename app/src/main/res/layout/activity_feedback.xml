@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButtonFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/feedbackTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/feedbackTitle"/>
+
+
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback Page"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/feedbackPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/feedbackInputField"
+        android:text="Please Enter Feedback Here"
+        android:textSize="20dp"
+        android:layout_below="@id/feedbackTitle"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/feedbackInputField"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/feedbackPrompt"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:textColor="@color/black"
+        android:minLines="1"
+        android:gravity="start|top"
+        android:hint="Enter your feedback"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/submitReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Feedback"
+        android:layout_below="@id/feedbackInputField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+</RelativeLayout>

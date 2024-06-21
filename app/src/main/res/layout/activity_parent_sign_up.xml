@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C">
+
+    <Button
+        android:id="@+id/BackButton_ParentSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/signupHeaderTextParent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/signupHeaderTextParent"/>
+
+    <TextView
+        android:id="@+id/signupHeaderTextParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Parent Signup"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/signupNameTextParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupHeaderTextParent"
+        android:text="Parent Name:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/parentName_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/signupNameTextParent"
+        android:layout_alignStart="@id/signupNameTextParent"
+        android:hint="enter parent name here "
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/signupEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parentName_SignUp"
+        android:text="Parent Email:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/ParentEmail_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@id/signupEmailText"
+        android:layout_below="@id/signupEmailText"
+        android:hint="enter parent email here "
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/signupIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ParentEmail_SignUp"
+        android:text="Child ID:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/ParentSignUp_stdID"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@id/signupIDText"
+        android:layout_below="@id/signupIDText"
+        android:hint="enter child ID here "
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/signupButton_Parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ParentSignUp_stdID"
+        android:layout_centerHorizontal="true"
+        android:text="Signup"
+        android:layout_marginTop="50dp"
+        android:background="#A0522D"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

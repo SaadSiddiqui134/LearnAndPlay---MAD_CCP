@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2B48C"> <!-- Beige background -->
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@id/studentPortalTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/studentPortalTitle"/>
+
+
+
+    <TextView
+        android:id="@+id/studentPortalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Portal"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/buttonPlayShapeGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Shape Game"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/studentPortalTitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/buttonPlayNumbersGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Numbers Game"
+        android:background="#A0522D"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/buttonPlayShapeGame"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>
